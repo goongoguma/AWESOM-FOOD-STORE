@@ -1,10 +1,11 @@
 import Link from "next/link";
+import * as React from "react";
 
-const about = () => {
+const About = props => {
   return (
     <div>
       <Link href="/">
-        <a>Back to store</a>
+        <a>Back to Home</a>
       </Link>
       <div>
         <h1>AWESOM FOOD STORE STORY</h1>
@@ -26,4 +27,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default About;

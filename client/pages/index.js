@@ -7,7 +7,6 @@ import axios from "axios";
 const Index = props => {
   return (
     <div>
-      <div className="example">hello</div>
       <header>
         <Header />
       </header>

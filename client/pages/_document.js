@@ -5,9 +5,13 @@ export default class extends Document {
   render() {
     return (
       <html>
-        <Head />
-        <link rel="stylesheet" href="/_next/static/style.scss" />
-        <Head />
+        <Head>
+          <link
+            href="http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic"
+            rel="stylesheet"
+            type="text/css"
+          />
+        </Head>
         <body>
           <Main />
           <div id="modal" />

@@ -43,11 +43,18 @@ class Body extends React.Component {
     const { stores } = this.props;
     return (
       <React.Fragment>
-        {stores.map(store => (
-          <div onClick={this.open} key={store.id}>
-            <img src={store.thumb} onClick={() => this.storeDetail(store.id)} />
-          </div>
-        ))}
+        <h2 className="store-list-title">Store List</h2>
+        <ul className="container">
+          {stores.map(store => (
+            <li onClick={this.open} key={store.id} className="item">
+              <img
+                src={store.thumb}
+                onClick={() => this.storeDetail(store.id)}
+                alt={`${store.name} image`}
+              />
+            </li>
+          ))}
+        </ul>
         {this.state.opened && (
           <Portal selector="#modal">
             <div className="overlay">
