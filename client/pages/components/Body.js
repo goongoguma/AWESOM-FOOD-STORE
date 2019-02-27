@@ -1,6 +1,4 @@
 import * as React from "react";
-import { Portal } from "./Portal";
-import { Stream } from "stream";
 
 // const Body = props => (
 //   <div>
@@ -12,123 +10,51 @@ import { Stream } from "stream";
 //   </div>
 // );
 
-class Body extends React.Component {
-  constructor() {
-    super(...arguments);
-    this.state = { opened: false, image: "", name: "", description: "" };
-  }
-
-  open = () => {
-    this.setState({ opened: true });
-  };
-
-  close = () => {
-    this.setState({ opened: false });
-  };
-
-  storeDetail = id => {
-    this.props.stores.map(store => {
-      if (store.id === id) {
-        this.setState({
-          name: store.name,
-          image: store.image,
-          description: store.description
-        });
-      }
-    });
-  };
-
-  render() {
-    const { image, name, description } = this.state;
-    const { stores } = this.props;
-    return (
-      <React.Fragment>
-        <h2 className="store-list-title">Store List</h2>
-        <ul className="container">
-          {stores.map(store => (
-            <li onClick={this.open} key={store.id} className="item">
-              <img
-                src={store.thumb}
-                onClick={() => this.storeDetail(store.id)}
-                alt={`${store.name} image`}
-              />
-            </li>
-          ))}
-        </ul>
-        {this.state.opened && (
-          <div>
-            <Portal selector="#modal">
-              <div className="extra" />
-              <div className="overlay">
-                <div className="modal">
-                  <img src={image} alt="store image" className="modal-image" />
-                  <h3 className="modal-store-name">{name}</h3>
-                  <p className="modal-store-description">{description}</p>
-                  <button
-                    type="button"
-                    className="close-btn"
-                    onClick={this.close}
-                  >
-                    X
-                  </button>
-                </div>
-                <style jsx global>{`
-                  body {
-                    overflow: hidden;
-                  }
-                `}</style>
-                <style jsx>{`
-                  .overlay {
-                    position: fixed;
-                    background-color: rgba(0, 0, 0, 0.7);
-                    top: 0;
-                    right: 0;
-                    bottom: 0;
-                    left: 0;
-                  }
-
-                  .overlay:after {
-                    background: blue;
-                  }
-
-                  .modal {
-                    background-color: white;
-                    position: absolute;
-                    top: 5%;
-                    right: 10%;
-                    bottom: 10%;
-                    left: 10%;
-                    padding: 1em;
-                  }
-
-                  .modal-store-name {
-                    margin-top: 1.5rem;
-                    font-size: 2rem;
-                    color: #e67e22;
-                  }
-
-                  .modal-store-description {
-                    margin-top: 10px;
-                    line-height: 1.5rem;
-                  }
-                  .close-btn {
-                    color: #181818;
-                    cursor: pointer;
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    width: 30px;
-                    height: 30px;
-                    outline: none;
-                  }
-                `}</style>
-              </div>
-            </Portal>
-          </div>
-        )}
-      </React.Fragment>
-    );
-  }
-}
+const Body = () => {
+  return (
+    <div className="body-groups">
+      <h2>Our Motto</h2>
+      <div className="group1">
+        <h4>EAT</h4>
+        <p>
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout. The point of
+          using Lorem Ipsum is that it has a more-or-less normal distribution of
+          letters, as opposed to using 'Content here, content here', making it
+          look like readable English. ichard McClintock, a Latin professor at
+          Hampden-Sydney College in Virginia, looked up one of the more obscure
+          Latin words, consectetur, from a Lorem Ipsum passage, and going
+          through the cites of the word in classical literature, discovered the
+          undoubtable source.
+        </p>
+      </div>
+      <div className="group2">
+        <h4>PRAY</h4>
+        <p>
+          Many desktop publishing packages and web page editors now use Lorem
+          Ipsum as their default model text, and a search for 'lorem ipsum' will
+          uncover many web sites still in their infancy. Various versions have
+          evolved over the years, sometimes by accident, sometimes on purpose
+          (injected humour and the like). Lorem Ipsum comes from sections
+          1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes
+          of Good and Evil) by Cicero, written in 45 BC. This book is a treatise
+          on the theory of ethics, very popular during the Renaissance.
+        </p>
+      </div>
+      <div className="group3">
+        <h4>LOVE</h4>
+        <p>
+          There are many variations of passages of Lorem Ipsum available, but
+          the majority have suffered alteration in some form, by injected
+          humour, or randomised words which don't look even slightly believable.
+          It was popularised in the 1960s with the release of Letraset sheets
+          containing Lorem Ipsum passages, and more recently with desktop
+          publishing software like Aldus PageMaker including versions of Lorem
+          Ipsum.
+        </p>
+      </div>
+    </div>
+  );
+};
 
 export default Body;

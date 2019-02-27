@@ -11,22 +11,13 @@ const Index = props => {
         <Header />
       </header>
       <section>
-        <Body stores={props.data} />
+        <Body />
       </section>
       <footer>
         <Footer />
       </footer>
     </div>
   );
-};
-
-Index.getInitialProps = async () => {
-  const res = await axios.get("http://localhost:9000/stores");
-  const data = await res.data;
-  console.log(`Show data fetched. Count: ${data.length}`);
-  return {
-    data: data
-  };
 };
 
 export default Index;

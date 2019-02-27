@@ -7,6 +7,13 @@
   text-align: center;
 }
 
+@mixin background {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
 @mixin grid($cols, $mgn) {
   float: left;
   margin-right: $mgn;

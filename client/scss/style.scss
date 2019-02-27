@@ -42,17 +42,9 @@ dl {
 /* ----------------------------------------------- */
 
 header {
-  background-image: -webkit-linear-gradient(
-      rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)
-    ),
-    $base64-image;
+  @include background;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     $base64-image;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  background-attachment: fixed;
 
   .sub-header {
     color: $color-white;
@@ -104,39 +96,36 @@ header {
 /* ----------------------------------------------- */
 
 section {
-  background: whitesmoke;
+  padding: 2rem;
+  height: 100vh;
+  background-image: linear-gradient(#000000, #434343);
+  .body-groups {
+    text-align: center;
+  }
 
-  .store-list-title {
+  h2 {
+    color: $color-white;
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  .group1,
+  .group2,
+  .group3 {
+    padding: 10px;
+  }
+
+  .body-groups h4 {
     color: $color-main;
     text-align: center;
-    padding-top: 2rem;
-    font-size: 3rem;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
   }
 
-  .container {
-    padding: 3rem;
-  }
-
-  .container:after {
-    @include clearfix;
-  }
-
-  .item {
-    @include grid(5, 2%);
-
-    img {
-      opacity: 0.7;
-      width: 100%;
-      height: auto;
-      transition: transform 0.5s, opacity 0.5s;
-      border-radius: 50px;
-      cursor: pointer;
-    }
-
-    img:hover {
-      opacity: 1;
-      transform: scale(1.03);
-    }
+  .body-groups p {
+    color: $color-white;
+    line-height: 2rem;
+    text-align: left;
   }
 }
 
@@ -170,5 +159,61 @@ footer {
         color: rgb(99, 96, 96);
       }
     }
+  }
+}
+
+/* ----------------------------------------------- */
+/* Stores */
+/* ----------------------------------------------- */
+
+.store-wrapper {
+  @include background;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    $base64-image2;
+  text-align: center;
+  height: 120vh;
+
+  .store-list-title {
+    color: $color-white;
+    padding-top: 2rem;
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  h4 {
+    color: $color-main;
+    font-size: 1.5rem;
+  }
+
+  .container {
+    padding: 3rem;
+  }
+
+  .container:after {
+    @include clearfix;
+  }
+
+  .item {
+    @include grid(5, 2%);
+
+    img {
+      opacity: 0.7;
+      width: 100%;
+      height: auto;
+      transition: transform 0.5s, opacity 0.5s;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+
+    img:hover {
+      opacity: 1;
+      transform: scale(1.03);
+    }
+  }
+
+  .back-to-menu {
+    text-decoration: none;
+    color: $color-white;
+    text-align: left;
   }
 }
