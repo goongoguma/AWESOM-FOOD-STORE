@@ -56,43 +56,75 @@ class Body extends React.Component {
           ))}
         </ul>
         {this.state.opened && (
-          <Portal selector="#modal">
-            <div className="overlay">
-              <div className="modal">
-                <img src={image} alt="store image" />
-                <h3>{name}</h3>
-                <p>{description}</p>
-                <button type="button" onClick={this.close}>
-                  Close Modal
-                </button>
-              </div>
-              <style jsx global>{`
-                body {
-                  overflow: hidden;
-                }
-              `}</style>
-              <style jsx>{`
-                .overlay {
-                  position: fixed;
-                  background-color: rgba(0, 0, 0, 0.7);
-                  top: 0;
-                  right: 0;
-                  bottom: 0;
-                  left: 0;
-                }
+          <div>
+            <Portal selector="#modal">
+              <div className="extra" />
+              <div className="overlay">
+                <div className="modal">
+                  <img src={image} alt="store image" className="modal-image" />
+                  <h3 className="modal-store-name">{name}</h3>
+                  <p className="modal-store-description">{description}</p>
+                  <button
+                    type="button"
+                    className="close-btn"
+                    onClick={this.close}
+                  >
+                    X
+                  </button>
+                </div>
+                <style jsx global>{`
+                  body {
+                    overflow: hidden;
+                  }
+                `}</style>
+                <style jsx>{`
+                  .overlay {
+                    position: fixed;
+                    background-color: rgba(0, 0, 0, 0.7);
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                  }
 
-                .modal {
-                  background-color: white;
-                  position: absolute;
-                  top: 10%;
-                  right: 10%;
-                  bottom: 10%;
-                  left: 10%;
-                  padding: 1em;
-                }
-              `}</style>
-            </div>
-          </Portal>
+                  .overlay:after {
+                    background: blue;
+                  }
+
+                  .modal {
+                    background-color: white;
+                    position: absolute;
+                    top: 5%;
+                    right: 10%;
+                    bottom: 10%;
+                    left: 10%;
+                    padding: 1em;
+                  }
+
+                  .modal-store-name {
+                    margin-top: 1.5rem;
+                    font-size: 2rem;
+                    color: #e67e22;
+                  }
+
+                  .modal-store-description {
+                    margin-top: 10px;
+                    line-height: 1.5rem;
+                  }
+                  .close-btn {
+                    color: #181818;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 30px;
+                    height: 30px;
+                    outline: none;
+                  }
+                `}</style>
+              </div>
+            </Portal>
+          </div>
         )}
       </React.Fragment>
     );
