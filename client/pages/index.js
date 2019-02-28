@@ -10,9 +10,9 @@ const Index = props => {
       <header>
         <Header />
       </header>
-      <section>
+      <div className="body-section">
         <Body />
-      </section>
+      </div>
       <footer>
         <Footer />
       </footer>

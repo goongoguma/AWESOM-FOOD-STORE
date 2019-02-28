@@ -1,27 +1,29 @@
 import Link from "next/link";
 import * as React from "react";
 
-const About = props => {
+const About = () => {
   return (
-    <div>
-      <Link href="/">
-        <a>Back to Home</a>
-      </Link>
-      <div>
-        <h1>AWESOM FOOD STORE STORY</h1>
+    <div className="about-wrapper">
+      <div className="about-title">
+        <h1>ABOUT AWESOM FOOD STORE</h1>
         <h4>“Cakes are healthy too, you just eat a small slice.” </h4>
       </div>
-      <div>
-        <p>Welcome to my project!</p>
+      <div className="about-body">
+        <img src="http://i63.tinypic.com/13ynx9z.jpg" className="my-pic" />
         <p>
-          This page is for Introduction of the project built with Next.js, Axios
-          and SCSS
+          Welcome to my project! <br />
+          This project is built with <br />- Next.js <br />
+          - SCSS
+          <br />
+          - Axios.
+          <br /> You can look up 8 different places <br />
+          where you can have a great time with people you love. <br />
+          Thank you for visiting :)
+          <br />
+          <Link href="/">
+            <a className="back-to-menu">☞ Back to Home</a>
+          </Link>
         </p>
-        <p>
-          You can look up 8 different places where you can eat with people you
-          love.
-        </p>
-        <p>Thank you :)</p>
       </div>
     </div>
   );

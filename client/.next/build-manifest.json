@@ -11,7 +11,7 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/Stores": [
+    "/About": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
@@ -19,6 +19,10 @@
       "static/runtime/webpack.js",
       "static/css/styles.chunk.css",
       "static/chunks/styles.js",
+      "static/runtime/main.js"
+    ],
+    "/Stores": [
+      "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
     "/": [

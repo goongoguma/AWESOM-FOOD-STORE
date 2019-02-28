@@ -49,7 +49,7 @@ class Stores extends React.Component {
             ))}
           </ul>
           <Link href="/">
-            <a className="back-to-menu">Back to Home</a>
+            <a className="back-to-menu">☞ Back to Home</a>
           </Link>
           {this.state.opened && (
             <div>
@@ -62,8 +62,10 @@ class Stores extends React.Component {
                       alt="store image"
                       className="modal-image"
                     />
-                    <h3 className="modal-store-name">{name}</h3>
-                    <p className="modal-store-description">{description}</p>
+                    <div className="modal-content-wrapper">
+                      <h3 className="modal-store-name">{name}</h3>
+                      <p className="modal-store-description">{description}</p>
+                    </div>
                     <button
                       type="button"
                       className="close-btn"
@@ -86,11 +88,9 @@ class Stores extends React.Component {
                       bottom: 0;
                       left: 0;
                     }
-
                     .overlay:after {
                       background: blue;
                     }
-
                     .modal {
                       background-color: linear-gradient(
                         rgba(0, 0, 0, 0.7),
@@ -101,16 +101,20 @@ class Stores extends React.Component {
                       right: 10%;
                       bottom: 10%;
                       left: 10%;
-                      padding: 1em;
+                      padding: 4rem;
                       color: #fff;
+                      display: flex;
                     }
-
+                    .modal-image {
+                      width: 100%;
+                      height: 70%;
+                      margin-right: 2rem;
+                    }
                     .modal-store-name {
-                      margin-top: 1.5rem;
                       font-size: 2rem;
                       color: #e67e22;
+                      margin-bottom: 1.5rem;
                     }
-
                     .modal-store-description {
                       margin-top: 10px;
                       line-height: 1.5rem;

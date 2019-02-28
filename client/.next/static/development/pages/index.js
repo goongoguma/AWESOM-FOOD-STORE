@@ -12059,63 +12059,70 @@ var Body = function Body() {
     },
     __self: this
   }, "Our Motto"), react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
-    className: "group1",
+    className: "section-wrapper",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("h4", {
+  }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("section", {
+    className: "group1",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 18
     },
     __self: this
-  }, "EAT"), react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", {
+  }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("h4", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 19
     },
     __self: this
-  }, "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. ichard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.")), react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+  }, "EAT"), react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: this
+  }, "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.")), react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("section", {
     className: "group2",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 28
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("h4", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 29
     },
     __self: this
   }, "PRAY"), react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 30
     },
     __self: this
-  }, "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.")), react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+  }, "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).")), react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("section", {
     className: "group3",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 38
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("h4", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 39
     },
     __self: this
   }, "LOVE"), react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 40
     },
     __self: this
-  }, "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.")));
+  }, "Ao contr\xE1rio da cren\xE7a popular, o Lorem Ipsum n\xE3o \xE9 simplesmente texto aleat\xF3rio. Tem ra\xEDzes numa pe\xE7a de literatura cl\xE1ssica em Latim, de 45 AC, tornando-o com mais de 2000 anos. Richard McClintock, um professor de Latim no Col\xE9gio Hampden-Sydney, na Virg\xEDnia, procurou uma das palavras em Latim mais obscuras."))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Body);
@@ -12308,35 +12315,42 @@ function (_React$Component) {
           lineNumber: 8
         },
         __self: this
-      }, "AWESOME FOOD STORE"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
-        href: "/About",
+      }, "AWESOME FOOD STORE"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "flex",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 9
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
-        className: "header-section",
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+        href: "/About",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 10
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
+        className: "header-section flex-item",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 11
         },
         __self: this
       }, "ABOUT")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
         href: "/Stores",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 12
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
-        className: "header-section",
-        __source: {
-          fileName: _jsxFileName,
           lineNumber: 13
         },
         __self: this
-      }, "STORES")));
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
+        className: "header-section flex-item",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 14
+        },
+        __self: this
+      }, "STORES"))));
     }
   }]);
 
@@ -12392,7 +12406,8 @@ var Index = function Index(props) {
       lineNumber: 11
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "body-section",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 13
