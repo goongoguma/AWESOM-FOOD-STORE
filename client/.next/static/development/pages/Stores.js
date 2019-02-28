@@ -13163,7 +13163,7 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 4:
+/***/ 5:
 /*!***************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2FStores&absolutePagePath=C%3A%5CUsers%5CJ%5CDocuments%5CAwesomeFoodStore%5Cclient%5Cpages%5CStores.js ***!
   \***************************************************************************************************************************************************/
@@ -13186,5 +13186,5 @@ module.exports = dll_92862a29917dee4fb2b1;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js","styles"]]]));;
+},[[5,"static/runtime/webpack.js","styles"]]]));;
 //# sourceMappingURL=Stores.js.map
