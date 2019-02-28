@@ -2,6 +2,7 @@ import axios from "axios";
 import { Portal } from "./components/Portal";
 import * as React from "react";
 import Link from "next/link";
+import "../scss/style.scss";
 
 class Stores extends React.Component {
   constructor() {
@@ -49,7 +50,7 @@ class Stores extends React.Component {
             ))}
           </ul>
           <Link href="/">
-            <a className="back-to-menu">☞ Back to Home</a>
+            <a className="back-to-menu">Back to Home</a>
           </Link>
           {this.state.opened && (
             <div>
@@ -118,6 +119,7 @@ class Stores extends React.Component {
                     .modal-store-description {
                       margin-top: 10px;
                       line-height: 1.5rem;
+                      font-size: 80%;
                     }
                     .close-btn {
                       color: #fff;

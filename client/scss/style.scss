@@ -1,7 +1,7 @@
 // Basic Setting
-@import "./encodedImg";
-@import "./variables";
-@import "./mixins";
+@import "./encodedImg.scss";
+@import "./mixins.scss";
+@import "./variables.scss";
 
 *,
 *::before,
@@ -103,7 +103,7 @@ header {
 
 .body-section {
   padding: 2rem;
-  height: 100vh;
+  height: auto;
   background-image: linear-gradient(#434343, #000000);
 
   h2 {
@@ -120,6 +120,7 @@ header {
   section {
     padding: 50px;
     margin-right: 25px;
+    height: auto;
   }
 
   .body-groups h4 {
@@ -206,6 +207,7 @@ footer {
       height: auto;
       transition: transform 0.5s, opacity 0.5s;
       border-radius: 50px;
+      margin-bottom: 20px;
       cursor: pointer;
     }
 
@@ -215,9 +217,12 @@ footer {
       border: 1px solid $color-main;
     }
   }
-
   .back-to-menu {
     @include backtoMenu;
+  }
+
+  .back-to-menu:hover {
+    @include backtoMenuHover;
   }
 }
 
@@ -246,22 +251,26 @@ footer {
   .about-body {
     padding: 20px;
     margin-top: 25px;
-
     @include center;
     display: flex;
+
     .my-pic {
-      margin-right: 20px;
       border-radius: 50%;
-      height: 100%;
+      height: 30%;
+      width: 30%;
     }
 
     p {
       color: #fff;
       font-size: 1.5rem;
       line-height: 2.5rem;
+
       .back-to-menu {
         @include backtoMenu;
-        margin-left: 20px;
+        margin-left: 10px;
+      }
+      .back-to-menu:hover {
+        @include backtoMenuHover;
       }
     }
   }

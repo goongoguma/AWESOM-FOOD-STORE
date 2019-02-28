@@ -34,4 +34,12 @@
   text-decoration: none;
   color: $color-white;
   text-align: left;
+  border: 1px solid $color-main;
+  border-radius: 50px;
+  padding: 15px;
+}
+
+@mixin backtoMenuHover {
+  background: $color-main;
+  transition: border-bottom 0.2s, color 0.2s;
 }

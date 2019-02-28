@@ -1,21 +1,11 @@
 import * as React from "react";
 
-// const Body = props => (
-//   <div>
-//     <h1>Shows</h1>
-//     {props.stores.map(store => {
-//       return <img key={store.id} src={store.thumb} />;
-//     })}
-//     <Modal />
-//   </div>
-// );
-
 const Body = () => {
   return (
     <div className="body-groups">
       <h2>Our Motto</h2>
       <div className="section-wrapper">
-        <section className="group1">
+        <section>
           <h4>EAT</h4>
           <p>
             It is a long established fact that a reader will be distracted by
@@ -25,7 +15,7 @@ const Body = () => {
             here', making it look like readable English.
           </p>
         </section>
-        <section className="group2">
+        <section>
           <h4>PRAY</h4>
           <p>
             Many desktop publishing packages and web page editors now use Lorem
@@ -35,7 +25,7 @@ const Body = () => {
             purpose (injected humour and the like).
           </p>
         </section>
-        <section className="group3">
+        <section>
           <h4>LOVE</h4>
           <p>
             Ao contrário da crença popular, o Lorem Ipsum não é simplesmente

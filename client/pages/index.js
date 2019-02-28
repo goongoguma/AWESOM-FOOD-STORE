@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 import "../scss/style.scss";
 import axios from "axios";
 
-const Index = props => {
+const Index = () => {
   return (
     <div>
       <header>
