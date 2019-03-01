@@ -275,3 +275,19 @@ footer {
     }
   }
 }
+
+/* ----------------------------------------------- */
+/* error */
+/* ----------------------------------------------- */
+
+.error-occured {
+  background: #181818;
+  height: 100vh;
+  color: $color-white;
+}
+
+.error-message {
+  @include center;
+  line-height: 3rem;
+  font-size: 2rem;
+}

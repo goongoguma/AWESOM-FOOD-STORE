@@ -232,5 +232,23 @@ footer {
         background: #e67e22;
         transition: border-bottom 0.2s, color 0.2s; }
 
+/* ----------------------------------------------- */
+/* error */
+/* ----------------------------------------------- */
+.error-occured {
+  background: #181818;
+  height: 100vh;
+  color: #fff; }
+
+.error-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 3rem;
+  font-size: 2rem; }
+
 
 /*# sourceMappingURL=styles.chunk.css.map*/
